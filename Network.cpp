@@ -244,7 +244,7 @@ template<class ItemType>
 bool Network<ItemType>::addToFeed(Post* post) {
     std::string created_by = post->getUsername();
     if (getIndexOf(created_by) > -1) {
-        feed_.insert(post, 0);
+        feed_.insert(*post, 0);
         return true;
     }
     return false;

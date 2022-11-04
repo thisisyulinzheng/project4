@@ -73,7 +73,7 @@ std::string Account::getPassword() const {
 */
 bool Account::addPost(Post* new_post) {
     if (new_post != nullptr) {
-        posts_.insert(new_post, 0);
+        posts_.insert(*new_post, 0);
         if (account_network != nullptr) {
             account_network->addToFeed(new_post);
         }

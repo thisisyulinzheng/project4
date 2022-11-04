@@ -7,7 +7,12 @@ Description   :   Implementation for Post class
 
 #include "Post.hpp"
 
-
+Post::Post() {
+    post_title_ = "";
+    post_body_ = "";
+    time_stamp_ = time(NULL);
+    username_ = "";
+}
 /**
    Parameterized constructor.
    @param      : The title of the post (a string)

@@ -13,7 +13,7 @@ Description   :   header/interface for Post class
 
 class Post {
 public:
-
+   Post();
   /**
      Parameterized constructor.
      @param      : The title of the post (a string)
